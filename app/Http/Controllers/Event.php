@@ -55,8 +55,6 @@ class Event extends Controller
         Products::create($json);
         $json = json_encode($json);
         // Faça algo com os dados (por exemplo, salvar no banco de dados)
-
-
         return response()->json(['message' => 'Solicitação POST bem-sucedida', "json" => $json], 200);
     }
 }
